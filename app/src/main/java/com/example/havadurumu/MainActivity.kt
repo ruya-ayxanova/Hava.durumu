@@ -157,9 +157,10 @@ class MainActivity : AppCompatActivity() {
         if (last != null) {
             setMy(last)
         } else if (providers.isNotEmpty()) {
-            LocationManagerCompat.getCurrentLocation(lm, providers.first(), null, mainExecutor) { loc ->
-                if (loc != null) setMy(loc)
-            }
+            LocationManagerCompat.getCurrentLocation(
+    lm, providers.first(), null as androidx.core.os.CancellationSignal?, mainExecutor,
+    androidx.core.util.Consumer<Location> { loc -> if (loc != null) setMy(loc) }
+)
         } else {
             Toast.makeText(this, "Konum kapalı", Toast.LENGTH_SHORT).show()
         }

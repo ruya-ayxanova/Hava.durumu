@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_bg">#1E3A8A</color>
+
+    <style name="Theme.Hava" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">#1E6FD9</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#0EA5E9</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="android:colorBackground">#F2F7FF</item>
+        <item name="android:statusBarColor">#F2F7FF</item>
+        <item name="android:navigationBarColor">#F2F7FF</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>
